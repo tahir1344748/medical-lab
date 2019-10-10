@@ -1,0 +1,7 @@
+In rescent commit I have added to files admin.html and entry.html.
+The admin.html will give administrators access to perform tasks like,
+i) Enter an Entry (Hold a Test)
+ii) Search Data
+iii) Search Record
+
+Print module is also included.
