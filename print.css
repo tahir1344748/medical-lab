@@ -1,0 +1,13 @@
+body{
+	visibility:hidden;
+}
+.print{
+	visibility:visible;
+}
+#print{
+	width:80px;
+	height:80px;
+}
+#print_btn{
+	border:none;
+}
