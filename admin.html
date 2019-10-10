@@ -40,7 +40,10 @@
         <a class="nav-link" href="entry.html">Entry</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tests</a>
+        <a class="nav-link" href="#">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pending</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -54,15 +57,19 @@
 		<div class="row">
 			<div class="col-md-1" ></div>
 			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
-				<label class="form-control btn-outline-info">Total Records : 1024</label>
+				<label class="form-control btn-info">Total Records : 1024</label>
 			</div>
 			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
-				<label class="form-control btn-outline-info">Completed Reports : 924</label>
+				<label class="form-control btn-danger">Remaining Reports : 100</label>
 			</div>
 			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
-				<label class="form-control btn-outline-danger">Remaining Reports : 100</label>
+				<label class="form-control btn-info">Completed Reports : 924</label>
 			</div>
 		</div>
 	</form>
+	<script>
+		var email="tahir1344748@gmail.com";
+		document.write("<button class='btn btn-outline-success' onclick='location.href='"+email+"'' style='margin-left:20px;''>Email Doctor</button>");
+	</script>
 </body>
 </html>
