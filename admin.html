@@ -21,7 +21,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body id="body">
+<body>
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		  <a class="navbar-brand" href="#">
@@ -46,30 +46,51 @@
         <a class="nav-link" href="#">Pending</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="#">Timings</a>
       </li>
     </ul>
     <button class="btn btn-danger ml-auto" type="button" onclick="location.href='index.html'">Sign Out</button>
   </div>
 		</nav>
-	</div>
-	<form style="margin-top: 10px;">
 		<div class="row">
-			<div class="col-md-1" ></div>
-			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
+			<div class="col-md-3" style="margin: 5px 0px 0px 0px;">
 				<label class="form-control btn-info">Total Records : 1024</label>
+
 			</div>
-			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
+			<div class="col-md-3" style="margin: 5px 0px 0px 0px;">
 				<label class="form-control btn-danger">Remaining Reports : 100</label>
 			</div>
-			<div class="col-md-3" style="margin: 0px 10px 0px 10px;">
+			<div class="col-md-3" style="margin: 5px 0px 0px 0px;">
 				<label class="form-control btn-info">Completed Reports : 924</label>
 			</div>
+			<div class="col-md-3" style="margin: 5px 0px 0px 0px;">
+				<div class="card text-white bg-success mb-3">
+  					<div class="card-header">Note</div>
+  					<div class="card-body">
+    					<h5 class="card-title">Pending Reports :</h5>
+    					<p class="card-text">You are requested to please clear all the pending
+    						reports before <time>05:00 PM,</time> Or inform the clients by an email about report status.</p>
+  					</div>
+				</div>
+				<div class="card text-white bg-danger mb-3">
+  					<div class="card-header">Important!</div>
+  					<div class="card-body">
+    					<h5 class="card-title">Doctor's Email :</h5>
+    					<p class="card-text">Patients' reports should not be forwarded towards their
+    					corresponding Doctor, without thier choice.</p>
+  					</div>
+				</div>
+			</div>
+		</div>		
+
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br>
+	<footer>
+		<div class="bg-dark" style="height:150px;">
+			
 		</div>
-	</form>
-	<script>
-		var email="tahir1344748@gmail.com";
-		document.write("<button class='btn btn-outline-success' onclick='location.href='"+email+"'' style='margin-left:20px;''>Email Doctor</button>");
-	</script>
+	</footer>
+	</div>
 </body>
 </html>
