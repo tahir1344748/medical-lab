@@ -53,13 +53,13 @@
     <button class="btn btn-danger ml-auto" type="button" onclick="location.href='index.html'">Sign Out</button>
   </div>
 		</nav>
-	
+
 
 	<br>
 	<form>
 	  <div class="row">
 	  	<!-- Left Empty to give margin -->
-	  	<div class="col-md-3">	  		
+	  	<div class="col-md-3">
 	  	</div>
 	    <div class="col-md-3" style="margin: 10px 10px 0px 10px;">
 	      <input type="text" class="form-control" placeholder="First name" required>
@@ -75,10 +75,13 @@
 	  	<div class="col-md-3" style="margin: 10px 10px 0px 10px;">
 	  		<input type="email" class="form-control" placeholder="@email.com" style="margin-top:10px;">
 	  	</div>
-	  	<div class="col-md-2" style="margin: 10px 10px 0px 10px;">
-	  		<input type="radio" name="gender" value="male" checked style="margin-top:20px;"> Male
-	  		<input type="radio" name="gender" value="female"> Female
-	  		<input type="radio" name="gender" value="other"> other
+			<div class="col-md-3" style="margin: 10px 10px 0px 10px;">
+	  		<select class="form-control" style="margin-top:10px;">
+	  			<option selected>Gender</option>
+	  			<option>Male</option>
+	  			<option>Female</option>
+	  			<option>other</option>
+	  		</select>
 	  	</div>
 	  </div>
 	  <div class="row">
@@ -134,14 +137,18 @@
 	  </div>
 	  <div class="row">
 	  	<div class="col-md-3"></div>
-	  	<div class="col-md-1" style="margin: 10px 10px 0px 10px;">
+			<div class="col-md-3" style="margin: 10px 10px 0px 10px;">
+		  		<select class="form-control" style="margin-top:10px;">
+		  			<option selected>Labortarian</option>
+		  			<option>Hameed</option>
+		  			<option>Touseef</option>
+		  			<option>Nadeem</option>
+		  		</select>
+	  	</div>
+	  	<div class="col-md-4" style="margin: 10px 10px 0px 10px;">
 	  		<button type="reset" class="btn btn-outline-danger" style="margin-top:10px; width:90px;" reset>Reset</button>
-	  	</div>
-	  	<div class="col-md-2" style="margin: 10px 10px 0px 10px;">
-	  		<button type="submit" class="btn btn-outline-primary" style="margin-top:10px;">Submit</button>
-	  	</div>
-	  	<div class="col-md-1" style="margin: 10px 10px 0px 10px;">
-	  		<button type="print" class="btn btn-outline-primary" id="print_btn" onclick="window.print();return false;" style="margin-top:10px; border-style:none;"><img src="img/print.png" id="print"></button>
+				<button type="submit" class="btn btn-outline-primary" style="margin-top:10px;">Submit</button>
+				<button type="print" class="btn btn-outline-primary" id="print_btn" onclick="window.print();return false;" style="margin-top:10px; border-style:none;"><img src="img/print.png" id="print"></button>
 	  	</div>
 	  </div>
 	</form>

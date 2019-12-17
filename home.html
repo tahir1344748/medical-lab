@@ -8,23 +8,23 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	 <!-- Latest compiled and minified CSS -->
-	 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+	<!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
 </head>
 <body>
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		  <a class="navbar-brand" href="#">
+		  <a class="navbar-brand" href="home.html">
 		  	<img src="logo1.png" class="logo">
 		  	Mehran Labortary
 		  </a>
@@ -43,10 +43,48 @@
         <a class="nav-link" href="#">About Us</a>
       </li>
     </ul>
-    <button class="btn btn-danger ml-auto" type="button" onclick="location.href='index.html'">Sign In</button>
+    <button class="btn btn-danger ml-auto" type="button" data-toggle="modal" data-target="#loginModal">Log In</button>
   </div>
 
 		</nav>
+
+		<div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4><!--this will display modal header-->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 		<br>
 		<center>
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -102,25 +140,6 @@
 
 
 
-
-
-
-
-
-		<!-- This is a responsive Table
-
-		<table class="table table-responsive">
-			<tr class="table-info">
-				<td class="col-md-4">Name</td>
-				<td class="col-md-4">Email</td>
-				<td class="col-md-4">ID</td>
-			</tr>
-			<tr class="table-danger">
-				<td class="col-md-4">Tahir</td>
-				<td class="col-md-4">tahir@gmail.com</td>
-				<td class="col-md-4">01-134181-047</td>
-			</tr>
-		</table>  -->
 	</div>
 
 </body>
